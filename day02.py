@@ -1,3 +1,10 @@
-l = [1, 3, 3, 2, 4]  # list
-s = {1, 3, 3, 2, 4}  # set
-print(l, s)  # [1, 3, 3, 2, 4] {1, 2, 3, 4}
+n = int(input("input num"))
+cnt = 0
+for i in range(1, n+1):
+    if (n%i == 0):
+        cnt += 1
+
+if cnt == 2:
+    print("prime")
+else:
+    print("not prime")
